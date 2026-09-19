@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function analyzeArr(){
+const numbers = [5, 7, 2, 9, 1, 8, 3, 4, 12];
+var i=0;
+var max = 0, min = 0, sum = 0;
+min = numbers[0];
+  while(i < 9){
+    if(min > numbers[i])
+    {
+      min = numbers[i];
+    }
+    if(max < numbers[i])
+    {
+      max = numbers[i];
+    }
+    sum = sum + numbers[i];
+    i++;
+  }
+alert("Минимальное число: " + min);
+alert("Максимальное число: " + max);
+alert("Среднее арифметическое: " + sum/9);
+}
+
+analyzeArr();
+    </script>
+</body>
+</html>
+
